@@ -1,0 +1,50 @@
+{
+  "pins" : [
+    {
+      "identity" : "auth0.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/Auth0.swift",
+      "state" : {
+        "revision" : "f60927196902e83934adc9407134994347f24db8",
+        "version" : "2.3.2"
+      }
+    },
+    {
+      "identity" : "jwtdecode.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/JWTDecode.swift",
+      "state" : {
+        "revision" : "7918a343e674c7707e0be120bb4e21d679be014c",
+        "version" : "3.0.1"
+      }
+    },
+    {
+      "identity" : "passcodefield",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hengyu/PasscodeField.git",
+      "state" : {
+        "revision" : "2e3495fbb8b759229ddb929b7ad851224db95782",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "qrcodereader.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/yannickl/QRCodeReader.swift.git",
+      "state" : {
+        "revision" : "5020b5a47199d8ba80c83a4b4fafd70e9dc9dc7f",
+        "version" : "10.1.1"
+      }
+    },
+    {
+      "identity" : "simplekeychain",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/auth0/SimpleKeychain.git",
+      "state" : {
+        "revision" : "7f7be4a7dfc9164c2c66f95193cec9df9ac47d58",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 2
+}

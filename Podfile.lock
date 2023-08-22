@@ -1,0 +1,28 @@
+PODS:
+  - Auth0 (2.5.0):
+    - JWTDecode (~> 3.1)
+    - SimpleKeychain (~> 1.1)
+  - Guardian (1.0.0)
+  - JWTDecode (3.1.0)
+  - SimpleKeychain (1.1.0)
+
+DEPENDENCIES:
+  - Auth0 (~> 2.0)
+  - Guardian
+
+SPEC REPOS:
+  trunk:
+    - Auth0
+    - Guardian
+    - JWTDecode
+    - SimpleKeychain
+
+SPEC CHECKSUMS:
+  Auth0: 72f19ad566fdf57f07bf37f828afd0c1570769a5
+  Guardian: 72860abbac74365a50a5b6dc272ae8715df2bee2
+  JWTDecode: 3eaab1e06b6f4dcbdd6716aff09ba4c2104ca8b7
+  SimpleKeychain: f8707c8e97b38c6a6e687b17732afc9bcef06439
+
+PODFILE CHECKSUM: 687ff9345c48158216d213f4aa5cb7305304c40b
+
+COCOAPODS: 1.12.1

@@ -1,9 +1,10 @@
 import SwiftUI
 import Guardian
-import PasscodeField
+//import PasscodeField
 
 public struct PINVerificationView: View {
     @Binding var pin: String
+    var pinLength: Int = 4
     var enrollment: GuardianState
     var onPINVerification: (Bool) -> Void
     @Environment(\.presentationMode) var presentationMode
@@ -24,13 +25,13 @@ public struct PINVerificationView: View {
                         .padding(.horizontal)
                 }
                 .padding()
-
+                
                 VStack {
                     
-                Text("Verify with your PIN to continue!")
-                    .font(.headline)
-                    .padding(.horizontal)
-
+                    Text("Verify with your PIN to continue!")
+                        .font(.headline)
+                        .padding(.horizontal)
+                    
                     PasscodeField("Enter PIN") { digits,action  in
                         print(pin);
                         print(digits.concat)
@@ -50,6 +51,7 @@ public struct PINVerificationView: View {
                     }
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
+                    
                 }
                 .padding()
                 .background(Color(UIColor.systemBackground))
@@ -70,9 +72,6 @@ public struct PINVerificationView: View {
                 .foregroundColor(.blue)
         })
     }
-                    
-            
-
 }
 
 struct PINVerificationView_Previews: PreviewProvider {
@@ -97,4 +96,3 @@ struct PINVerificationView_Previews: PreviewProvider {
         )
     }
 }
-

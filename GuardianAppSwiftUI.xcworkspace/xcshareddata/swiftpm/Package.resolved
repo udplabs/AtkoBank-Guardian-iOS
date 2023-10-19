@@ -19,6 +19,15 @@
       }
     },
     {
+      "identity" : "otpview-swiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mukeshsolanki/otpview-swiftui.git",
+      "state" : {
+        "revision" : "a4b5e210ffce6ff5b7889c212939df25a3c24dd4",
+        "version" : "1.0.0"
+      }
+    },
+    {
       "identity" : "passcodefield",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/hengyu/PasscodeField.git",

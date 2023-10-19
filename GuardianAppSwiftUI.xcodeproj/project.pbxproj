@@ -26,6 +26,7 @@
 		11764C432A4A566F0074EC6D /* PasscodeField in Frameworks */ = {isa = PBXBuildFile; productRef = 11764C422A4A566F0074EC6D /* PasscodeField */; };
 		11D8F2DB2A243E8B0092A4A4 /* EnrollmentsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D8F2DA2A243E8B0092A4A4 /* EnrollmentsListView.swift */; };
 		19BCCD36D9DA3FF5CFE03DA2 /* Pods_GuardianAppSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9D65202F14266663019885C /* Pods_GuardianAppSwiftUI.framework */; };
+		BC1E7E5D2A99048400EDEF7B /* PasscodeField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1E7E5C2A99048400EDEF7B /* PasscodeField.swift */; };
 		BC692A0C2A7AE7D90075EA53 /* Auth0 in Frameworks */ = {isa = PBXBuildFile; productRef = BC692A0B2A7AE7D90075EA53 /* Auth0 */; };
 		BC692A0E2A7AE90D0075EA53 /* Auth0.plist in Resources */ = {isa = PBXBuildFile; fileRef = BC692A0D2A7AE90D0075EA53 /* Auth0.plist */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		11764C3D2A4A3BA80074EC6D /* CreatePINView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePINView.swift; sourceTree = "<group>"; };
 		11764C3F2A4A47D90074EC6D /* PINVerificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PINVerificationView.swift; sourceTree = "<group>"; };
 		11D8F2DA2A243E8B0092A4A4 /* EnrollmentsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnrollmentsListView.swift; sourceTree = "<group>"; };
+		BC1E7E5C2A99048400EDEF7B /* PasscodeField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasscodeField.swift; sourceTree = "<group>"; };
 		BC692A0D2A7AE90D0075EA53 /* Auth0.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Auth0.plist; sourceTree = "<group>"; };
 		C9342A2B32CF7D351B1DCA7C /* Pods-GuardianAppSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardianAppSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-GuardianAppSwiftUI/Pods-GuardianAppSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
 		E8A744949FE3220F8E4911D7 /* Pods-GuardianAppSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GuardianAppSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-GuardianAppSwiftUI/Pods-GuardianAppSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				11764C3D2A4A3BA80074EC6D /* CreatePINView.swift */,
 				11764C3F2A4A47D90074EC6D /* PINVerificationView.swift */,
 				11088AD52A186F8B00F14628 /* Preview Content */,
+				BC1E7E5C2A99048400EDEF7B /* PasscodeField.swift */,
 			);
 			path = GuardianAppSwiftUI;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				115797022A1BB9170000243A /* XCRemoteSwiftPackageReference "JWTDecode" */,
 				11764C412A4A566F0074EC6D /* XCRemoteSwiftPackageReference "PasscodeField" */,
 				BC692A0A2A7AE7D90075EA53 /* XCRemoteSwiftPackageReference "Auth0" */,
+				BC1E7E592A98FD9400EDEF7B /* XCRemoteSwiftPackageReference "otpview-swiftui" */,
 			);
 			productRefGroup = 11088ACD2A186F8900F14628 /* Products */;
 			projectDirPath = "";
@@ -274,6 +278,7 @@
 				11764C3E2A4A3BA80074EC6D /* CreatePINView.swift in Sources */,
 				115796FF2A1B17F70000243A /* ScannerView.swift in Sources */,
 				11088AD02A186F8900F14628 /* GuardianAppSwiftUIApp.swift in Sources */,
+				BC1E7E5D2A99048400EDEF7B /* PasscodeField.swift in Sources */,
 				115796FA2A1B118C0000243A /* State.swift in Sources */,
 				115797062A1BCE770000243A /* EnrollmentView.swift in Sources */,
 				116D83342A2988DA00E13E27 /* EnrollmentRowView.swift in Sources */,
@@ -414,14 +419,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1240;
+				CURRENT_PROJECT_VERSION = 1310;
 				DEVELOPMENT_ASSET_PATHS = "\"GuardianAppSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 88VDMUUDGU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuardianAppSwiftUI/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BankZero;
+				INFOPLIST_KEY_CFBundleDisplayName = "Okta Bank";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan QR Codes";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Authentication with TouchId or FaceID";
@@ -457,14 +462,14 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1240;
+				CURRENT_PROJECT_VERSION = 1310;
 				DEVELOPMENT_ASSET_PATHS = "\"GuardianAppSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = "";
 				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 88VDMUUDGU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = GuardianAppSwiftUI/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = BankZero;
+				INFOPLIST_KEY_CFBundleDisplayName = "Okta Bank";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSCameraUsageDescription = "Used to scan QR Codes";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "Authentication with TouchId or FaceID";
@@ -540,6 +545,14 @@
 		11764C412A4A566F0074EC6D /* XCRemoteSwiftPackageReference "PasscodeField" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/hengyu/PasscodeField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		BC1E7E592A98FD9400EDEF7B /* XCRemoteSwiftPackageReference "otpview-swiftui" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mukeshsolanki/otpview-swiftui.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;

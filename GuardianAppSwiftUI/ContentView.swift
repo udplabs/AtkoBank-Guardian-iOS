@@ -167,7 +167,7 @@ struct ContentView: View {
 
     func extractEmailAndDomain(from urlString: String) -> (email: String?, domain: String?) {
         let percentEncodingRemoved = urlString.removingPercentEncoding!
-        let pattern = "otpauth://totp/.+?:(.+?)\\?enrollment_tx_id=.+?&base_url=https?://([^/]+).*"
+        let pattern = "otpauth://totp/.+?:(.+?)\\?enrollment_tx_id=.+?&base_url=https?://([^/]+.*)"
         let regex = try! NSRegularExpression(pattern: pattern, options: [])
         let range = NSRange(location: 0, length: percentEncodingRemoved.count)
         guard let match = regex.firstMatch(in: percentEncodingRemoved, options: [], range: range) else {
